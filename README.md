@@ -11,7 +11,7 @@ The installation for this repository is easy. Please refer to [INSTALL.md](INSTA
 Please refer to [DATASET.md](DATASET.md) to prepare datasets.
 
 ## Quick Start
-We provide scripts for simplifying training and inference. Please refer to [scripts/train_*.sh], [scripts/eval_*.sh].
+We provide scripts for simplifying training and inference. Please refer to scripts/train_*.sh, scripts/eval_*.sh.
 
 For example, if you want to train TACoS dataset, just modifying [scripts/train.sh](scripts/train.sh) as follows:
 
