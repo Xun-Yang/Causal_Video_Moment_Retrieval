@@ -19,7 +19,7 @@ Start training: bash ./scripts/train_charades_DCM.sh
 
 
 ## Support
-Please feel free to contact me: hfutyangxun@gmail.com if you need my help.
+Please feel free to contact me: hfutyangxun@gmail.com if you need any help.
 
 ## Acknowledgements
 Please remember to cite our paper if you use our codes or features:
