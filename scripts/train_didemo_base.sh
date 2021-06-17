@@ -17,12 +17,13 @@ method=TCN_BASE
 config_file=configs/$model\.yaml
 #
 for seed in {0..0}
+#for seed in {0..9}
 
 do
     echo "training using the $seed seed\n"
-    output_dir=../outputs/$model\_$method\_test_$seed\_gpu_$gpus
+    output_dir=./outputs/$model\_$method\_test_$seed\_gpu_$gpus
 
     CUDA_VISIBLE_DEVICES=$gpus python -m torch.distributed.launch \
     --nproc_per_node=$gpun --master_addr $master_addr \
-    --master_port $master_port train_net.py --config-file $config_file --seed $seed OUTPUT_DIR $output_dir SOLVER.MAX_EPOCH 16 SOLVER.LR 0.0001 SOLVER.BATCH_SIZE 64 TEST.BATCH_SIZE 64 MODEL.ARCHITECTURE $method
+    --master_port $master_port train_net.py --config-file $config_file --seed $seed OUTPUT_DIR $output_dir SOLVER.MAX_EPOCH 20 SOLVER.LR 0.0001 SOLVER.BATCH_SIZE 64 TEST.BATCH_SIZE 64 MODEL.ARCHITECTURE $method
 done
