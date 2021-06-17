@@ -18,8 +18,8 @@ config_file=configs/$model\.yaml
 for seed in {0..0}
 do 
     echo "evaluate using the $seed seed model weight\n"
-    output_dir=../outputs/$model\_$method\_test_$seed\_gpu_$gpus
-	weight_file=$output_dir/model_best.pth
+    output_dir=./outputs/$model\_$method\_test_$seed\_gpu_$gpus
+    weight_file=$output_dir/model_best.pth
 
     CUDA_VISIBLE_DEVICES=$gpus python -m torch.distributed.launch \
     --nproc_per_node=$gpun --master_addr $master_addr --master_port $master_port \
