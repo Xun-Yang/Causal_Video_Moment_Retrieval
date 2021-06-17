@@ -1,44 +1,8 @@
-# 2D-TAN (Optimized)  
+# SIGIR 2021: Deconfounded Video Moment Retrieval with Causal Intervention
 
 ## Introduction
 
-This is an optimized re-implementation repository for AAAI'2020 paper: [Learning 2D Temporal Localization Networks for Moment Localization with Natural Language](https://arxiv.org/abs/1912.03590). 
-
-![](pipeline.jpg)
-
-**We show advantages in speed and performance compared with the official implementation (https://github.com/microsoft/2D-TAN).**
-
-## Comparison
-
-### *Performance: Better Results*
-
-**1. TACoS Dataset**
-| Repo | Rank1@0.1 | Rank1@0.3 | Rank1@0.5 | Rank5@0.1 | Rank5@0.3 | Rank5@0.5 |
-| ---- |:-------------:| :-----:|:-----:|:-----:|:-----:|:-----:|
-| Official | 47.59 | 37.29 | 25.32 | 70.31 | 57.81 | 45.04 |
-| **Ours** | **57.54** | **45.36** | **31.87** | **77.88** | **65.83** | **54.29** |
-
-**2. ActivityNet Dataset**
-| Repo | Rank1@0.3 | Rank1@0.5 | Rank1@0.7 | Rank5@0.3 | Rank5@0.5 | Rank5@0.7 |
-| ---- |:-------------:| :-----:|:-----:|:-----:|:-----:|:-----:|
-| Official | 59.45 | 44.51 | 26.54 | 85.53 | 77.13 | 61.96 |
-| **Ours** | **60.00** | **45.25** | **28.62** | **85.80** | **77.25** | **62.11** |
-
-### *Speed and Cost: Faster Training/Inference, Less Memory Cost*
-
-**1. Speed (ActivityNet Dataset)**
-| Repo | Training | Inferece | Required Training Epoches |
-| ---- |:-------------:| :-----:| :-----:|
-| Official | 1.98 s/batch | 0.81 s/batch | 100 |
-| **Ours** | **1.50 s/batch** | **0.61 s/batch** | **5** |
-
-**2. Memory Cost (ActivityNet Dataset)**
-| Repo | Training | Inferece |
-| ---- |:-------------:| :-----:|
-| Official | 4*10145 MB/batch | 4*3065 MB/batch |
-| **Ours** | **4*5345 MB/batch** | **4*2121 MB/batch** |
-
-*Note: These results are measured on 4 NVIDIA Tesla V100 GPUs, with batch size 32.*
+This is the repository for our SIGIR 2021 paper: [Deconfounded Video Moment Retrieval with Causal Intervention](https://arxiv.org/pdf/2106.01534.pdf). 
 
 ## Installation
 The installation for this repository is easy. Please refer to [INSTALL.md](https://github.com/ChenJoya/2dtan/blob/master/INSTALL.md).
@@ -91,11 +55,11 @@ Please open a new issue. We would like to answer it. Please feel free to contact
 ## Acknowledgements
 We greatly appreciate the official 2D-Tan repository https://github.com/microsoft/2D-TAN and maskrcnn-benchmark https://github.com/facebookresearch/maskrcnn-benchmark. We learned a lot from them. Moreover, please remember to cite the paper:
 ```
-@InProceedings{2DTAN_2020_AAAI,
-author = {Zhang, Songyang and Peng, Houwen and Fu, Jianlong and Luo, Jiebo},
-title = {Learning 2D Temporal Adjacent Networks forMoment Localization with Natural Language},
-booktitle = {AAAI},
-year = {2020}
-} 
+@InProceedings{yang2021deconfounded,
+  title={Deconfounded Video Moment Retrieval with Causal Intervention},
+  author={Yang, Xun and Feng, Fuli and Ji, Wei and Wang, Meng and Chua, Tat-Seng},
+  booktitle={SIGIR},
+  year={2021}
+}
 ```
 
