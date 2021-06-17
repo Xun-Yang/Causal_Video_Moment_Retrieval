@@ -1,0 +1,43 @@
+MODEL:
+  WEIGHT: ""
+  ARCHITECTURE: "TCN"
+  SIGMA: 0.5
+  TCN:
+    NUM_CLIPS: 6
+    FEATPOOL:
+      INPUT_SIZE: 1024
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 1
+    FEAT2D:
+      POOLING_COUNTS: [5]
+    INTEGRATOR: 
+      QUERY_HIDDEN_SIZE: 512
+      LSTM:
+        NUM_LAYERS: 3
+        BIDIRECTIONAL: False
+    PREDICTOR:
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 5
+      NUM_STACK_LAYERS: 4
+    LOSS:
+      MIN_IOU: 0.7
+      MAX_IOU: 1.0
+DATASETS:
+  TRAIN: ("didemo_train", )
+  VAL: ("didemo_test", )
+  TEST: ("didemo_test",)
+  TEST_1: ("didemo_ood_test_3",)
+  TEST_2: ("didemo_ood_test_6",)
+INPUT:
+  NUM_PRE_CLIPS: 6
+  PRE_QUERY_SIZE: 300
+DATALOADER:
+  NUM_WORKERS: 4
+SOLVER:
+  LR: 0.0005
+  BATCH_SIZE: 64
+  MILESTONES: (20, 30)
+  MAX_EPOCH: 30
+TEST:
+  NMS_THRESH: 0.45
+  BATCH_SIZE: 64

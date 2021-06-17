@@ -1,0 +1,42 @@
+MODEL:
+  WEIGHT: ""
+  ARCHITECTURE: "TCN"
+  TCN:
+    NUM_CLIPS: 16
+    FEATPOOL:
+      INPUT_SIZE: 1024
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 16
+    FEAT2D:
+      POOLING_COUNTS: [15]
+    INTEGRATOR: 
+      QUERY_HIDDEN_SIZE: 512
+      LSTM:
+        NUM_LAYERS: 3
+        BIDIRECTIONAL: False
+    PREDICTOR:
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 5
+      NUM_STACK_LAYERS: 4
+    LOSS:
+      MIN_IOU: 0.5
+      MAX_IOU: 1.0
+DATASETS:
+  TRAIN: ("charades_I3D_train", )
+  VAL: ("charades_I3D_test",)
+  TEST: ("charades_I3D_test",)
+  TEST_1: ("charades_I3D_ood_test_10",)
+  TEST_2: ("charades_I3D_ood_test_15",)
+INPUT:
+  NUM_PRE_CLIPS: 256
+  PRE_QUERY_SIZE: 300
+DATALOADER:
+  NUM_WORKERS: 4
+SOLVER:
+  LR: 0.0005
+  BATCH_SIZE: 64
+  MILESTONES: (30, 40)
+  MAX_EPOCH: 30
+TEST:
+  NMS_THRESH: 0.45
+  BATCH_SIZE: 64
