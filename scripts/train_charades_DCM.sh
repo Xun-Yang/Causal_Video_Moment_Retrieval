@@ -7,13 +7,12 @@ model=cfg_16x16_pool_k5l8_charades_I3D
 gpus=6
 # number of gpus
 gpun=1
-# please modify it with different value (e.g., 127.0.0.2, 29502) when you run multi 2dtan task on the same machine
+# please modify it with different value (e.g., 127.0.0.2, 29502) when you run multi task on the same machine
 master_addr=127.0.0.1
 master_port=29501
 
 method=TCN_DCM
 
-# ------------------------ need not change -----------------------------------
 config_file=configs/$model\.yaml
 #
 for seed in {0..0}
