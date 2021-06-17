@@ -13,41 +13,10 @@ Please refer to [DATASET.md](DATASET.md) to prepare datasets.
 ## Quick Start
 We provide scripts for simplifying training and inference. Please refer to scripts/train_xx.sh, scripts/eval_xx.sh.
 
-For example, if you want to train TACoS dataset, just modifying [scripts/train.sh](scripts/train.sh) as follows:
+For example, if you want to train our TCN+DCM method on the Charades-STA dataset, just modifying [scripts/train_charades_DCM.sh](scripts/train_charades_DCM.sh) to select the features (C3D/I3D/VGG), set your gpu id and set the number of training rounds with different random seeds (In our experiments, report the average performance of 10 runs on Charades-STA and DiDeMo, and 5 runs on ActivityNet-Captions, with different random seeds for network initialization). 
 
-```bash
-# find all configs in configs/
-model=2dtan_128x128_pool_k5l8_tacos
-# set your gpu id
-gpus=0,1,2,3
-# number of gpus
-gpun=4
-# please modify it with different value (e.g., 127.0.0.2, 29502) when you run multi 2dtan task on the same machine
-master_addr=127.0.0.1
-master_port=29501
-...
-```
+Start training: bash ./scripts/train_charades_DCM.sh
 
-Another example, if you want to evaluate on ActivityNet dataset, just modifying [scripts/eval.sh](scripts/eval.sh) as follows:
-
-```bash
-# find all configs in configs/
-config_file=configs/2dtan_64x64_pool_k9l4_activitynet.yaml
-# the dir of the saved weight
-weight_dir=outputs/2dtan_64x64_pool_k9l4_activitynet
-# select weight to evaluate
-weight_file=model_1e.pth
-# test batch size
-batch_size=32
-# set your gpu id
-gpus=0,1,2,3
-# number of gpus
-gpun=4
-# please modify it with different value (e.g., 127.0.0.2, 29502) when you run multi 2dtan task on the same machine
-master_addr=127.0.0.2
-master_port=29502
-...
-```
 
 ## Support
 Please feel free to contact me: hfutyangxun@gmail.com if you need my help.
@@ -62,4 +31,5 @@ Please remember to cite our paper if you use our codes or features:
   year={2021}
 }
 ```
+We appreciate the optimized 2D-Tan repository https://github.com/ChenJoya/2dtan. We use some codes from the optimized 2D-Tan repository to implement our work. Thanks. Please also cite their paper if you use the codes.
 
