@@ -25,5 +25,5 @@ do
 
     CUDA_VISIBLE_DEVICES=$gpus python -m torch.distributed.launch \
     --nproc_per_node=$gpun --master_addr $master_addr \
-    --master_port $master_port train_net.py --config-file $config_file --seed $seed OUTPUT_DIR $output_dir SOLVER.MAX_EPOCH 15 SOLVER.LR 0.0001 SOLVER.BATCH_SIZE 32 TEST.BATCH_SIZE 32 MODEL.ETA 1.0 MODEL.LAMBDA 0.001 MODEL.ARCHITECTURE $method
+    --master_port $master_port train_net.py --config-file $config_file --seed $seed OUTPUT_DIR $output_dir SOLVER.MAX_EPOCH 25 SOLVER.LR 0.0001 SOLVER.BATCH_SIZE 32 TEST.BATCH_SIZE 32 MODEL.ETA 1.0 MODEL.LAMBDA 0.001 MODEL.ARCHITECTURE $method
 done
