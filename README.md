@@ -50,10 +50,10 @@ master_port=29502
 ```
 
 ## Support
-Please open a new issue. We would like to answer it. Please feel free to contact me: chenjoya@foxmail.com if you need my help.
+Please feel free to contact me: hfutyangxun@gmail.com if you need my help.
 
 ## Acknowledgements
-We greatly appreciate the official 2D-Tan repository https://github.com/microsoft/2D-TAN and maskrcnn-benchmark https://github.com/facebookresearch/maskrcnn-benchmark. We learned a lot from them. Moreover, please remember to cite the paper:
+Please remember to cite our paper if you use our codes or features:
 ```
 @InProceedings{yang2021deconfounded,
   title={Deconfounded Video Moment Retrieval with Causal Intervention},
