@@ -16,10 +16,11 @@ method=TCN_BASE
 config_file=configs/$model\.yaml
 #
 for seed in {0..0}
+#for seed in {0..4}
 
 do
     echo "training using the $seed seed\n"
-    output_dir=../outputs/$model\_$method\_test_$seed\_gpu_$gpus
+    output_dir=./outputs/$model\_$method\_test_$seed\_gpu_$gpus
 
     CUDA_VISIBLE_DEVICES=$gpus python -m torch.distributed.launch \
     --nproc_per_node=$gpun --master_addr $master_addr \
