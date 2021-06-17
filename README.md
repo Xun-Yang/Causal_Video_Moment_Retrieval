@@ -5,7 +5,7 @@
 This is the repository for our SIGIR 2021 paper: [Deconfounded Video Moment Retrieval with Causal Intervention](https://arxiv.org/pdf/2106.01534.pdf). 
 
 ## Installation
-The installation for this repository is easy. Please refer to [INSTALL.md](https://github.com/ChenJoya/2dtan/blob/master/INSTALL.md).
+The installation for this repository is easy. Please refer to [INSTALL.md](INSTALL.md).
 
 ## Dataset
 Please refer to [DATASET.md](DATASET.md) to prepare datasets.
