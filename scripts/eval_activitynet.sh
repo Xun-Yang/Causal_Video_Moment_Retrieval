@@ -16,7 +16,7 @@ for seed in {0..0}
 
 do 
 	echo "evaluate using the best checkpoint with the $method\ model trained with seed: $seed\\n"
-	output_dir=../outputs/$model\_$method\_test_$seed\_gpu_$gpus
+	output_dir=./outputs/$model\_$method\_test_$seed\_gpu_$gpus
 	weight_file=$output_dir/model_best.pth
 
 	CUDA_VISIBLE_DEVICES=$gpus python -m torch.distributed.launch \
