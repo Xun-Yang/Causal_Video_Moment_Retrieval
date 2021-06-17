@@ -23,3 +23,12 @@ pip install yacs h5py terminaltables tqdm pickle
 conda install pytorch torchvision cudatoolkit=10.2 torchtext -c pytorch
 
 git clone https://github.com/Xun-Yang/Causal_Video_Moment_Retrieval
+cd Causal_Video_Moment_Retrieval
+
+# create the directory for storing logs and model checkpoints.
+mkdir ./outputs
+
+# create the dataset directories for Charades-STA
+mkdir ./data/Charades-STA/charades_c3d
+mkdir ./data/Charades-STA/charades_i3d
+mkdir ./data/Charades-STA/charades_vgg
