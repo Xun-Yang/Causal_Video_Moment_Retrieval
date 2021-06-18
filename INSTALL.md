@@ -16,7 +16,7 @@ conda activate DCM
 conda install ipython pip
 
 # install some dependencies
-pip install yacs h5py terminaltables tqdm pickle
+pip install yacs h5py terminaltables tqdm pickle-mixin
 
 # follow PyTorch installation in https://pytorch.org/get-started/locally/
 # we use CUDA 10.2, others may also be okay
