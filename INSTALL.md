@@ -20,7 +20,7 @@ pip install yacs h5py terminaltables tqdm pickle-mixin
 
 # follow PyTorch installation in https://pytorch.org/get-started/locally/
 # we use CUDA 10.2, others may also be okay
-conda install pytorch torchvision cudatoolkit=10.2 torchtext -c pytorch
+conda install pytorch=1.5 torchvision cudatoolkit=10.2 torchtext -c pytorch
 
 git clone https://github.com/Xun-Yang/Causal_Video_Moment_Retrieval
 cd Causal_Video_Moment_Retrieval
