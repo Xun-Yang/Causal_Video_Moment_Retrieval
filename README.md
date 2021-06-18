@@ -31,5 +31,5 @@ Please remember to cite our paper if you use our codes or features:
   year={2021}
 }
 ```
-We appreciate the optimized 2D-Tan repository https://github.com/ChenJoya/2dtan. We use some codes from the optimized 2D-Tan repository to implement our work. Thanks. Please also cite their paper if you use the codes.
+We appreciate the optimized 2D-Tan repository https://github.com/ChenJoya/2dtan. We use some codes from the optimized 2D-Tan repository to implement our work. Please also cite their paper if you use the codes.
 
