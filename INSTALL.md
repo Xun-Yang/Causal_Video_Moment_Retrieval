@@ -12,9 +12,6 @@
 conda create -n DCM python=3.7
 conda activate DCM
 
-# install the right pip and dependencies for the fresh python
-conda install ipython pip
-
 # install some dependencies
 pip install yacs h5py terminaltables tqdm pickle-mixin
 
