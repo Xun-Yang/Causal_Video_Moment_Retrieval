@@ -14,4 +14,6 @@ or download the C3D/I3D features (charades_c3d.zip, charades_i3d.tar.gz) from go
 
 You can also follow https://github.com/microsoft/2D-TAN/tree/master/data/Charades-STA to prepare the VGG feature for the Charades-STA dataset and download the C3D & I3D features from google drive (links)
 
+## DiDeMo (Flow)
+Please download the flow feature (average_global_flow.h5) from google drive https://drive.google.com/file/d/1VROqT18sl8iGBkatTyHf3viRtFC_QN70/view?usp=sharing, and then put it into the corresponding subdirectory.
 
