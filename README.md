@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the repository for our SIGIR 2021 paper: [Deconfounded Video Moment Retrieval with Causal Intervention](https://arxiv.org/pdf/2106.01534.pdf). 
+This is the repository for our SIGIR 2021 paper: [Deconfounded Video Moment Retrieval with Causal Intervention](https://dl.acm.org/doi/pdf/10.1145/3404835.3462823). 
 
 ## Installation
 The installation for this repository is easy. Please refer to [INSTALL.md](INSTALL.md).
