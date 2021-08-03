@@ -24,12 +24,20 @@ Please feel free to contact me: hfutyangxun@gmail.com if you need any help.
 ## Acknowledgements
 Please remember to cite our paper if you use our codes or features:
 ```
-@InProceedings{yang2021deconfounded,
-  title={Deconfounded Video Moment Retrieval with Causal Intervention},
-  author={Yang, Xun and Feng, Fuli and Ji, Wei and Wang, Meng and Chua, Tat-Seng},
-  booktitle={SIGIR},
-  year={2021}
+@inproceedings{yang2021deconfounded,
+author = {Yang, Xun and Feng, Fuli and Ji, Wei and Wang, Meng and Chua, Tat-Seng},
+title = {Deconfounded Video Moment Retrieval with Causal Intervention},
+year = {2021},
+publisher = {Association for Computing Machinery},
+url = {https://doi.org/10.1145/3404835.3462823},
+doi = {10.1145/3404835.3462823},
+booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {1–10},
+numpages = {10},
+location = {Virtual Event, Canada},
+series = {SIGIR '21}
 }
+
 ```
 We appreciate the optimized 2D-Tan repository https://github.com/ChenJoya/2dtan. We use some codes from the optimized 2D-Tan repository to implement our work. Please also cite their paper if you use the codes.
 
