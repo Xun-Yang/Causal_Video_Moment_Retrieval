@@ -4,6 +4,9 @@
 
 This is the repository for our SIGIR 2021 paper: [Deconfounded Video Moment Retrieval with Causal Intervention](https://dl.acm.org/doi/pdf/10.1145/3404835.3462823). 
 
+## Key Words
+video grounding, temporal sentence grounding in videos, video moment retrieval, causal reasoning
+
 ## Installation
 The installation for this repository is easy. Please refer to [INSTALL.md](INSTALL.md).
 
